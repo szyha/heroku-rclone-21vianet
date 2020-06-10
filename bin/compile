@@ -176,5 +176,5 @@ if [ -f "id_rsa" ]; then
   chmod 0700 .ssh/id_rsa
   echo "-----> Done."
 else
-  echo "id_rsa not exist"  | indent
+  echo "id_rsa not exist"
 fi
