@@ -67,6 +67,14 @@ aria2c -x4 http://host/file.rar
 ```
 `-x4` mean download using 4 connection
 
+### Megatools
+Learn more from [Megatools Docs](https://megatools.megous.com/man/megatools.html)
+
+**Download a file**
+```
+megatools dl https://mega.nz/url
+```
+
 ### UNRAR
 Learn more from [UNRAR Docs](https://pypi.org/project/unrar/)
 
