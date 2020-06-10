@@ -123,6 +123,7 @@ echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/vendor/youtube-dl"' >> $PROFILE_PATH
+chmod +x "/app/vendor/youtube-dl/youtube-dl"
 
 #### install winrar ########
 
