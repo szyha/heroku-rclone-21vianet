@@ -2,18 +2,20 @@
 Using Rclone with 21vianet mod and Aria2, even UNRAR easily on Heroku.<br>
 在 Heroku 上轻松运行 Rclone、Aria2，甚至是 UNRAR。
 
-Only useing Aria2 and dislike command terminal? Try this [Heroku AriaNG 21vianet](https://github.com/xinxin8816/heroku-ariang-21vianet)<br>
-仅仅想用 Aria2 下载并且不喜欢命令行？试试这个 [Heroku-AriaNG 世纪互联版](https://github.com/xinxin8816/heroku-ariang-21vianet)
+Only useing Aria2 and dislike command terminal? Try this [Heroku AriaNG 21vianet](https://github.com/szyha/heroku-ariang-21vianet)<br>
+仅仅想用 Aria2 下载并且不喜欢命令行？试试这个 [Heroku-AriaNG 世纪互联版](https://github.com/szyha/heroku-ariang-21vianet)
 
 ## Deploy
 1. Create new app
 
 ```
-heroku create myapp -b https://github.com/xinxin8816/heroku-rclone-21vianet.git
+heroku create myapp -b https://github.com/szyha/heroku-rclone-21vianet.git
 heroku git:clone -a myapp
-
+cd myapp
+heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 # or useing existed app
-heroku buildpacks:set https://github.com/xinxin8816/heroku-rclone-21vianet.git -a myapp
+heroku buildpacks:set https://github.com/szyha/heroku-rclone-21vianet.git -a myapp
+heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest -a myapp
 ```
 
 2. Setup Rclone by following [Rclone Docs](https://rclone.org/docs/), Chinese users can setup with 21vianet patch to connect OneDrive by 21vianet.<br> 
