@@ -75,6 +75,14 @@ Learn more from [Megatools Docs](https://megatools.megous.com/man/megatools.html
 megatools dl https://mega.nz/url
 ```
 
+### youtube-dl
+Learn more from [youtube-dl Docs](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#options)
+
+**Download a file**
+```
+youtube-dl https://www.youtube.com/watch?v=jNQXAC9IVRw
+```
+
 ### UNRAR
 Learn more from [UNRAR Docs](https://pypi.org/project/unrar/)
 
