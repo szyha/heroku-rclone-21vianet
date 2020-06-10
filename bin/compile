@@ -117,7 +117,7 @@ fi
 cd "$BUILD_DIR/$VENDOR_DIR"
 mkdir -p youtube-dl
 cd youtube-dl
-chmod '$CACHE_DIR/$FILE'
+chmod "$CACHE_DIR/$FILE"
 cp "$CACHE_DIR/$FILE" .
 
 echo "exporting PATH" | indent
