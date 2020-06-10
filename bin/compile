@@ -91,7 +91,7 @@ cd "$BUILD_DIR/$VENDOR_DIR"
 mkdir -p megatools
 cd megatools
 cp "$CACHE_DIR/$FILE_ARC" .
-tar -zxvf "$FILE_ARC"
+tar -zxf "$FILE_ARC"
 mv "$FILE"/* .
 rm -rf "$FILE_ARC" "$FILE"
 
