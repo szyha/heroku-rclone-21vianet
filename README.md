@@ -13,9 +13,11 @@ heroku create myapp -b https://github.com/szyha/heroku-rclone-21vianet.git
 heroku git:clone -a myapp
 cd myapp
 heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+heroku buildpacks:add --index 3 heroku-community/apt
 # or useing existed app
 heroku buildpacks:set https://github.com/szyha/heroku-rclone-21vianet.git -a myapp
 heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest -a myapp
+heroku buildpacks:add --index 3 heroku-community/apt -a myapp
 ```
 
 2. Setup Rclone by following [Rclone Docs](https://rclone.org/docs/), Chinese users can setup with 21vianet patch to connect OneDrive by 21vianet.<br> 
