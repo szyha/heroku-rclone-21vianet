@@ -84,11 +84,28 @@ megatools dl https://mega.nz/url
 ### youtube-dl
 Learn more from [youtube-dl Docs](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#options)
 
-**Download a file**
+**Download YouTube video**
 ```
 youtube-dl https://www.youtube.com/watch?v=jNQXAC9IVRw
 ```
 
+### irssi
+Learn more from [irssi Docs](https://irssi.org/documentation/)
+
+**Connect to irc.rizon.net**
+```
+/connect irc.rizon.net
+```
+
+**Change nick**
+```
+/nick your_new_nick
+```
+
+**Join to channel**
+```
+/join name_channel
+```
 ### UNRAR
 Learn more from [UNRAR Docs](https://pypi.org/project/unrar/)
 
