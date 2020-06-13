@@ -153,19 +153,15 @@ PROFILE_PATH="$BUILD_DIR/.profile.d/unrar.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/vendor/winrar"' >> $PROFILE_PATH
 
-#### nano and weechat ####
+#### weechat ####
 
-echo "-----> exporting PATH for nano and weechat" | indent
-PROFILE_PATH="$BUILD_DIR/.profile.d/nano.sh"
-mkdir -p "$(dirname "$PROFILE_PATH")"
-echo 'export PATH="$PATH:${HOME}/.apt/bin/nano"' >> $PROFILE_PATH
+echo "exporting PATH for weechat" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/weechat.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/.apt/usr/bin/weechat"' >> $PROFILE_PATH
 
 #### moving rclone.conf ########
 
-echo 'export LANG=zh_CN.UTF-8' >> $PROFILE_PATH
 mkdir -p "$BUILD_DIR"/.profile.d
 cat <<EOF >"$BUILD_DIR"/.profile.d/rclone_config.sh
 #!/bin/sh

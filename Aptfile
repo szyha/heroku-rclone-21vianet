@@ -1,1 +1,2 @@
-nano weechat
+:repo:deb https://weechat.org/ubuntu focal main
+weechat
