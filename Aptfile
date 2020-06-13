@@ -1,2 +1,2 @@
 :repo:deb https://weechat.org/ubuntu focal main
-weechat
+weechat-curses weechat-plugins
