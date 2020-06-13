@@ -155,7 +155,10 @@ echo 'export PATH="$PATH:${HOME}/vendor/winrar"' >> $PROFILE_PATH
 
 #### weechat ####
 
-echo "exporting PATH for weechat" | indent
+echo "exporting PATH for weechat and nano" | indent
+PROFILE_PATH="$BUILD_DIR/.profile.d/nano.sh"
+mkdir -p "$(dirname "$PROFILE_PATH")"
+echo 'export PATH="$PATH:${HOME}/.apt/bin/nano"' >> $PROFILE_PATH
 PROFILE_PATH="$BUILD_DIR/.profile.d/weechat.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/.apt/usr/bin/weechat"' >> $PROFILE_PATH
@@ -172,7 +175,7 @@ if [ -f "rclone.conf" ]; then
   mv -f rclone.conf .config/rclone/rclone.conf
   echo "-----> Done."
 else
-  echo "rclone.conf not exist"  | indent
+  echo "rclone.conf not exist"
 fi
 
 echo "-----> moving id_rsa"
