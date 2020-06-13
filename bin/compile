@@ -155,10 +155,10 @@ echo 'export PATH="$PATH:${HOME}/vendor/winrar"' >> $PROFILE_PATH
 
 #### weechat ####
 
-echo "exporting PATH for weechat" | indent
-PROFILE_PATH="$BUILD_DIR/.profile.d/weechat.sh"
+echo "exporting PATH for irssi" | indent
+PROFILE_PATH="$BUILD_DIR/.profile.d/irssi.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
-echo 'export PATH="$PATH:${HOME}/.apt/usr/bin/weechat"' >> $PROFILE_PATH
+echo 'export PATH="$PATH:${HOME}/.apt/usr/bin/irssi"' >> $PROFILE_PATH
 
 #### moving rclone.conf ########
 
