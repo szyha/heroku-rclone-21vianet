@@ -18,7 +18,7 @@ heroku buildpacks:add --index 3 heroku-community/apt
 heroku buildpacks:add --index 4 https://github.com/velizarn/heroku-buildpack-nano
 # optional for better terminal
 heroku config:set TERM=xterm
-# optinal for irssi scripts
+# optional for irssi scripts
 heroku config:set PERL5LIB=/app/.apt/usr/lib/x86_64-linux-gnu/perl-base:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/share/perl5/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26.1/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26/
 # or useing existed app
 heroku buildpacks:set https://github.com/szyha/heroku-rclone-21vianet.git -a myapp
