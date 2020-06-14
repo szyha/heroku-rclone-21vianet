@@ -153,7 +153,7 @@ PROFILE_PATH="$BUILD_DIR/.profile.d/unrar.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/vendor/winrar"' >> $PROFILE_PATH
 
-#### weechat ####
+#### irssi ####
 
 echo "exporting PATH for irssi" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/irssi.sh"

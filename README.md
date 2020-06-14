@@ -14,11 +14,13 @@ heroku git:clone -a myapp
 cd myapp
 heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 heroku buildpacks:add --index 3 heroku-community/apt
+# optional for nano editor
 heroku buildpacks:add --index 4 https://github.com/velizarn/heroku-buildpack-nano
 # or useing existed app
 heroku buildpacks:set https://github.com/szyha/heroku-rclone-21vianet.git -a myapp
 heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest -a myapp
 heroku buildpacks:add --index 3 heroku-community/apt -a myapp
+# optional for nano editor
 heroku buildpacks:add --index 4 https://github.com/velizarn/heroku-buildpack-nano -a myapp
 ```
 
@@ -91,6 +93,11 @@ youtube-dl https://www.youtube.com/watch?v=jNQXAC9IVRw
 
 ### irssi
 Learn more from [irssi Docs](https://irssi.org/documentation/)
+
+**Open irssi**
+```
+irssi
+```
 
 **Connect to irc.rizon.net**
 ```
