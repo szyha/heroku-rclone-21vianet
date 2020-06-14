@@ -16,12 +16,20 @@ heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-
 heroku buildpacks:add --index 3 heroku-community/apt
 # optional for nano editor
 heroku buildpacks:add --index 4 https://github.com/velizarn/heroku-buildpack-nano
+# optional for better terminal
+heroku config:set TERM=xterm
+# optinal for irssi scripts
+heroku config:set PERL5LIB=/app/.apt/usr/lib/x86_64-linux-gnu/perl-base:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/share/perl5/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26.1/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26/
 # or useing existed app
 heroku buildpacks:set https://github.com/szyha/heroku-rclone-21vianet.git -a myapp
 heroku buildpacks:add --index 2 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest -a myapp
 heroku buildpacks:add --index 3 heroku-community/apt -a myapp
 # optional for nano editor
 heroku buildpacks:add --index 4 https://github.com/velizarn/heroku-buildpack-nano -a myapp
+# optional for better terminal
+heroku config:set TERM=xterm -a myapp
+# optional for irssi scripts
+heroku config:set PERL5LIB=/app/.apt/usr/lib/x86_64-linux-gnu/perl-base:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/share/perl5/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26.1/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26/ -a myapp
 ```
 
 2. Setup Rclone by following [Rclone Docs](https://rclone.org/docs/), Chinese users can setup with 21vianet patch to connect OneDrive by 21vianet.<br> 

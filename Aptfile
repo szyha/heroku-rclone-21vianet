@@ -1,1 +1,1 @@
-irssi
+irssi irssi-scripts perl-base libperl5.26 libwww-perl libnet-ssleay-perl libdatetime-perl libcpanplus-dist-build-perl
