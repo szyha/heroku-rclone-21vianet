@@ -111,7 +111,13 @@ if ! [ -e "$CACHE_DIR/$FILE_ARC" ]; then
   echo "-----> Fetching youtube-dl binaries at ${DOWNLOAD_URL}" | indent
   wget "$DOWNLOAD_URL" -q -O "$CACHE_DIR/$FILE_ARC"
 else
-  echo "build using cached source"  | indent
+  filestr=$(find . -name "$CACHE_DIR/$FILE_ARC" -mtime +1 -print)
+  if [ "$filestr" = "" ]; then
+    echo "-----> cache Expired, Fetching Latest youtube-dl at ${DOWNLOAD_URL}" | indent
+    wget $DOWNLOAD_URL -q -O "$CACHE_DIR/$FILE_ARC"
+  else
+    echo "build using cached source"  | indent
+  fi
 fi
 
 cd "$BUILD_DIR/$VENDOR_DIR"
