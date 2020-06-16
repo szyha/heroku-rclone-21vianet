@@ -190,6 +190,7 @@ echo 'export PATH="$PATH:${HOME}/vendor/winrar"' >> $PROFILE_PATH
 echo "exporting PATH for irssi" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/irssi.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
+echo 'export PERL5LIB="/app/.apt/usr/lib/x86_64-linux-gnu/perl-base:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/share/perl5/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/:/app/.apt/usr/lib/x86_64-linux-gnu/perl5/5.26/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26.1/:/app/.apt/usr/lib/x86_64-linux-gnu/perl/5.26/"' >> $PROFILE_PATH
 echo 'export PATH="$PATH:${HOME}/.apt/usr/bin/irssi"' >> $PROFILE_PATH
 
 #### moving rclone.conf ########
