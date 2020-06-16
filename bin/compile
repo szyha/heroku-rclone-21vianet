@@ -216,5 +216,5 @@ if [ -f "id_rsa" ]; then
 else
   echo "id_rsa not exist"
 fi
-rm Aptfile
-rm README.md
+rm -f Aptfile
+rm -f README.md
