@@ -91,6 +91,14 @@ Learn more from [Megatools Docs](https://megatools.megous.com/man/megatools.html
 megatools dl https://mega.nz/url
 ```
 
+### goodls
+Learn more from [goodls Docs](https://github.com/tanaikech/goodls#goodls)
+
+**Download a file**
+```
+goodls -u https://drive.google.com/file/d/######/view?usp=sharing
+```
+
 ### youtube-dl
 Learn more from [youtube-dl Docs](https://github.com/ytdl-org/youtube-dl/blob/master/README.md#options)
 
@@ -121,6 +129,7 @@ irssi
 ```
 /join name_channel
 ```
+
 ### UNRAR
 Learn more from [UNRAR Docs](https://pypi.org/project/unrar/)
 
