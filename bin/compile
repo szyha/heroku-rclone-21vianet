@@ -144,6 +144,7 @@ mkdir -p goodls
 cd goodls
 chmod +x "$CACHE_DIR/$FILE"
 cp "$CACHE_DIR/$FILE" .
+mv "$FILE" "goodls"
 
 echo "exporting PATH" | indent
 PROFILE_PATH="$BUILD_DIR/.profile.d/goodls.sh"
