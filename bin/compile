@@ -125,6 +125,31 @@ PROFILE_PATH="$BUILD_DIR/.profile.d/youtube-dl.sh"
 mkdir -p "$(dirname "$PROFILE_PATH")"
 echo 'export PATH="$PATH:${HOME}/vendor/youtube-dl"' >> $PROFILE_PATH
 
+#### install goodls ####
+echo "-----> Installing goodls"
+
+FILE="goodls_linux_amd64"
+FILE_ARC="${FILE}"
+DOWNLOAD_URL="https://github.com/tanaikech/goodls/releases/download/v1.2.6/$FILE_ARC"
+
+if ! [ -e "$CACHE_DIR/$FILE_ARC" ]; then
+  echo "-----> Fetching goodls binaries at ${DOWNLOAD_URL}" | indent
+  wget "$DOWNLOAD_URL" -q -O "$CACHE_DIR/$FILE_ARC"
+else
+  echo "build using cached source"  | indent
+fi
+
+cd "$BUILD_DIR/$VENDOR_DIR"
+mkdir -p goodls
+cd goodls
+chmod +x "$CACHE_DIR/$FILE"
+cp "$CACHE_DIR/$FILE" .
+
+echo "exporting PATH" | indent
+PROFILE_PATH="$BUILD_DIR/.profile.d/goodls.sh"
+mkdir -p "$(dirname "$PROFILE_PATH")"
+echo 'export PATH="$PATH:${HOME}/vendor/goodls"' >> $PROFILE_PATH
+
 #### install winrar ########
 
 echo "-----> Installing winrar"
