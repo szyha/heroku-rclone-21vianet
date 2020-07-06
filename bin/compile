@@ -161,7 +161,7 @@ echo 'export PATH="$PATH:${HOME}/vendor/goodls"' >> $PROFILE_PATH
 
 echo "-----> Installing winrar"
 
-FILE="rarlinux-x64-5.9.0.tar.gz"
+FILE="rarlinux-x64-5.9.1.tar.gz"
 DOWNLOAD_URL="https://www.rarlab.com/rar/$FILE"
 
 if ! [ -e "$CACHE_DIR/$FILE" ]; then
