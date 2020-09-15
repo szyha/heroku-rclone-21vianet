@@ -76,7 +76,7 @@ echo 'export PATH="$PATH:${HOME}/vendor/aria2c"' >> $PROFILE_PATH
 #### install megatools ####
 echo "-----> Installing Megatools"
 
-FILE="megatools-1.11.0-git-20200503-linux-x86_64"
+FILE="megatools-1.11.0-git-20200830-linux-x86_64"
 FILE_ARC="${FILE}.tar.gz"
 DOWNLOAD_URL="https://megatools.megous.com/builds/experimental/$FILE_ARC"
 
@@ -136,7 +136,7 @@ echo "-----> Installing goodls"
 
 FILE="goodls_linux_amd64"
 FILE_ARC="${FILE}"
-DOWNLOAD_URL="https://github.com/tanaikech/goodls/releases/download/v1.2.6/$FILE_ARC"
+DOWNLOAD_URL="https://github.com/tanaikech/goodls/releases/download/v1.2.7/$FILE_ARC"
 
 if ! [ -e "$CACHE_DIR/$FILE_ARC" ]; then
   echo "-----> Fetching goodls binaries at ${DOWNLOAD_URL}" | indent
