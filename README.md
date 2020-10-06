@@ -5,6 +5,14 @@ Using Rclone with 21vianet mod and Aria2, even UNRAR easily on Heroku.<br>
 Only useing Aria2 and dislike command terminal? Try this [Heroku AriaNG 21vianet](https://github.com/xinxin8816/heroku-ariang-21vianet)<br>
 仅仅想用 Aria2 下载并且不喜欢命令行？试试这个 [Heroku-AriaNG 世纪互联版](https://github.com/xinxin8816/heroku-ariang-21vianet)
 
+## Abuse Warning
+
+**Heroku are actively banning this APP now.**<br>
+
+**Your account will be SUSPENDED in highly possible.**<br>
+
+**This APP is no longer updated.**<br>
+
 ## Deploy
 1. Create new app
 
